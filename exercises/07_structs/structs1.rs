@@ -14,6 +14,20 @@ struct UnitStruct;
 
 fn main() {
     // You can optionally experiment here.
+    let red: ColorTupleStruct = ColorTupleStruct(255, 0, 0);
+    println!("{}", red.0);
+    println!("{}", red.1);
+    println!("{}", red.2);
+
+    let green: ColorRegularStruct = ColorRegularStruct {
+        red: 0,
+        green: 255,
+        blue: 0,
+    };
+
+    println!("{}", green.red);
+    println!("{}", green.green);
+    println!("{}", green.blue);
 }
 
 #[cfg(test)]
